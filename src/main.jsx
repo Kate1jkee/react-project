@@ -3,11 +3,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import React from 'react'
 import { restaurants } from "../materials/mock";
+import Header from './components/header/component';
+import Footer from './components/footer/component';
 
 const root = createRoot (document.getElementById('root'));
 root.render(
     <div>
-      <h1>Restaurants</h1>
+      <Header>Restaurants</Header>
       {restaurants.map((restaurant) => (
       <div>
         <h2>{restaurant.name}</h2>
@@ -29,6 +31,7 @@ root.render(
        </div>
       </div>
       ))}
+      <Footer>Contacts</Footer>
     </div>
 );
 
