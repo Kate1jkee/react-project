@@ -1,4 +1,4 @@
-import Restaurant from "../restaurant/component";
+import Restaurant from '../restaurant/component';
 
 const Restaurants = ({restaurants}) => {
     return (
